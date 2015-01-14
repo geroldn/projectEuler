@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg9_specialpythagoriantriplet;
+package pkg9_specialpythagoriantriplet ;
 
 /**
  *
  * @author gerold
  */
 public class Main {
-
+    static int s = 1000 ;
     /**
      * @param args the command line arguments
      */
@@ -20,10 +20,10 @@ public class Main {
             int c2 = (int) Math.pow(c, 2) ;
             for (int a = 1; a < c && ! found; a++) {
                 int a2 = (int) Math.pow(a, 2) ;                
-                    int b2 = (int) Math.pow(1000 - a - c, 2) ;
+                    int b2 = (int) Math.pow(s - a - c, 2) ;
                     if (a2 + b2 == c2) {
                         found = true ;
-                        System.out.println(">>> " + (long)(a * (1000 - c - a) * c) + " " + a + " " + (1000 - c - a) + " " + c) ;
+                        System.out.println(">>> " + (long)(a * (1000 - c - a) * c) + " " + a + " " + (s - c - a) + " " + c) ;
                 }
             }
             
